@@ -9,6 +9,10 @@ public class SorterTesterInt {
 
     public static void main(String[] args) {
         int arrLength = 10;
+        if (args.length != 0) {
+            arrLength = Integer.parseInt(args[0]);
+        }
+        
         Integer[] random_array = rndArray(arrLength); 
         Integer[] sorted_array = sortedArray(random_array);
         Integer[] reversed_array = reversedSortedArray(random_array);

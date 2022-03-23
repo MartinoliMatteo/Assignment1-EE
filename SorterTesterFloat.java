@@ -8,6 +8,10 @@ public class SorterTesterFloat {
 
     public static void main(String[] args) {
         int arrLength = 10;
+        if (args.length != 0) {
+            arrLength = Integer.parseInt(args[0]);
+        }
+        
         Float[] random_array = rndArray(arrLength); 
         Float[] sorted_array = sortedArray(random_array);
         Float[] reversed_array = reversedSortedArray(random_array);

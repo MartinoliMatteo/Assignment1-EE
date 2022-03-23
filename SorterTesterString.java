@@ -7,8 +7,12 @@ import sorting.BubbleSortWhileNeeded;
 
 public class SorterTesterString {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         int arrLength = 10;
+        if (args.length != 0) {
+            arrLength = Integer.parseInt(args[0]);
+        }
+        
         String[] random_array = rndArray(arrLength); 
         String[] sorted_array = sortedArray(random_array);
         String[] reversed_array = reversedSortedArray(random_array);

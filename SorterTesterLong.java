@@ -8,6 +8,10 @@ public class SorterTesterLong {
 
     public static void main(String[] args) {
         int arrLength = 10;
+        if (args.length != 0) {
+            arrLength = Integer.parseInt(args[0]);
+        }
+        
         Long[] random_array = rndArray(arrLength); 
         Long[] sorted_array = sortedArray(random_array);
         Long[] reversed_array = reversedSortedArray(random_array);
